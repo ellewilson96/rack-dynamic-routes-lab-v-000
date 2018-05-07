@@ -7,7 +7,6 @@ class Application
     if req.path=="/items"
       resp.write "#{item.price}\n"
     elsif
-      @@item
       resp.write "Item not found"
       resp.status = 400
     elsif
